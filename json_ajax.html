@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Locale storage</title>
+    <link rel="stylesheet" href="json_ajax_style.css">
+
+  </head>
+  <body onload="afficher()">
+    <div id="courses">
+      <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">One Click On Courses</h4>
+      <span class="text-muted">Notez vos idées pour commencer</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+      <h1>Listes des courses</h1>
+      <form>
+        <p>
+          Produit: <br>
+            <input type="text" id="prod" name="" value="" placeholder="Votre Produit svp">
+        </p>
+        <p>
+          Quantité: <br>
+            <input type="text" id="qnt" name="" value="" placeholder="Votre Quantité svp">
+        </p>
+        <p>
+          Produit: <br>
+            <!--<input type="button" name="" value="Ajouter" onclick="ajouter()">
+            <input type="button" name="" value="Modifier" onclick="modifier()">
+            <input type="button" name="" value="Supprimer" onclick="supprimer()">-->
+            <button type="button" class="btn btn-warning" onclick="ajouter()">Ajouter</button>
+            <button type="button" class="btn btn-success" onclick="modifier()">Modifier</button>
+            <button type="button" class="btn btn-warning" onclick="supprimer()">Supprimer</button>
+        </p>
+      </form>
+      <table id="paires">
+
+      </table>
+      <br>
+        <button type="button" class="btn btn-light" onclick="doClear()">Clear</button>
+        <!--<input type="button" name="" value="Clear">-->
+    </div>
+
+<script src="json_ajax_script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--<script type="text/javascript">
+  function ajouter() {
+    var produit = document.getElementById("prod").value;
+    var qte = document.getElementById("qnt").value;
+    console.log(qte);
+    localStorage.setItem(produit,qte);
+    document.getElementById("prod").value="";
+    document.getElementById("qnt").value="";
+  }
+</script>-->
+  </body>
+</html>

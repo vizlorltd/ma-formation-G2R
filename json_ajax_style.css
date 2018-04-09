@@ -1,0 +1,12 @@
+body{font-family: 'impact'; }
+#courses{
+        background-color:#18afd5;
+        width: 40%; height: 50;
+        padding: 10px; margin: auto;
+        border-color: 2px solid black;
+        border-radius:10px;
+
+      }
+#paires{border:1px #f0e011 solid;
+      
+      }
